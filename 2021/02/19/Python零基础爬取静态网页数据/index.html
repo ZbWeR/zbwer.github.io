@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Python零基础爬取静态网页数据, ZbWeR">
-    <meta name="description" content="Python零基础爬取静态网页数据前情提要前天群里公布大一上总成绩和排名的时候，只需要输入学号就可以查询个人的各科成绩和排名， 也就是说，要是我把年段所有人的学号输一遍去查，就能得到整个年段的所有成绩，近五百个学号，自然不能靠人工输入，自然">
+    <meta name="description" content="Python零基础爬取静态网页数据
+前情提要
+前天群里公布大一上总成绩和排名的时候，只需要输入学号就可以查询个人的各科成绩和排名，
+也就是说，要是我把年段所有人的学号输一遍去查，就能得到整个年段的所有成绩，近五百个学号，自然不能靠人工">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -493,9 +496,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Python零基础爬取静态网页数据"><a href="#Python零基础爬取静态网页数据" class="headerlink" title="Python零基础爬取静态网页数据"></a>Python零基础爬取静态网页数据</h2><h3 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h3><p>前天群里公布大一上总成绩和排名的时候，只需要输入学号就可以查询个人的各科成绩和排名， 也就是说，要是我把年段所有人的学号输一遍去查，就能得到整个年段的所有成绩，近五百个学号，自然不能靠人工输入，自然考虑到写一个程序来帮我完成。但根据我仅有的c++知识，还无法完成这件事，一直听说Python能爬取网页数据，今天便试着学习一下。</p>
-<h3 id="学习经过"><a href="#学习经过" class="headerlink" title="学习经过"></a>学习经过</h3><h4 id="原理探究："><a href="#原理探究：" class="headerlink" title="原理探究："></a>原理探究：</h4><p>首先是一些常识需要了解，一个网页是由源代码组成的，我们可以通过单击右键点击“查看源代码”来查看，我们可以借用python来帮我们访问一个网站，并获得该网页的源代码。源代码中包含了这个网页的各种信息，包括但不限于文字，图片的链接，数字等等。而我们需要的信息就藏在源代码中。获取源代码之后，我们先观察一下所需信息的特点，然后再在源码中筛选出我们需要的信息，最后借用python的一个与excel相关的库，来实现信息的存储。具体过程如下。</p>
-<h4 id="具体过程"><a href="#具体过程" class="headerlink" title="具体过程"></a>具体过程</h4><p>首先是如何使用python访问网站获得源码？具体实现原理笔者尚不清楚，此处仅给出一个较为通用的模板，使用时只需调用该函数即可获得网页的源代码。</p>
+                <h2 id="python零基础爬取静态网页数据">Python零基础爬取静态网页数据</h2>
+<h3 id="前情提要">前情提要</h3>
+<p>前天群里公布大一上总成绩和排名的时候，只需要输入学号就可以查询个人的各科成绩和排名，
+也就是说，要是我把年段所有人的学号输一遍去查，就能得到整个年段的所有成绩，近五百个学号，自然不能靠人工输入，自然考虑到写一个程序来帮我完成。但根据我仅有的c++知识，还无法完成这件事，一直听说Python能爬取网页数据，今天便试着学习一下。</p>
+<h3 id="学习经过">学习经过</h3>
+<h4 id="原理探究">原理探究：</h4>
+<p>首先是一些常识需要了解，一个网页是由源代码组成的，我们可以通过单击右键点击“查看源代码”来查看，我们可以借用python来帮我们访问一个网站，并获得该网页的源代码。源代码中包含了这个网页的各种信息，包括但不限于文字，图片的链接，数字等等。而我们需要的信息就藏在源代码中。获取源代码之后，我们先观察一下所需信息的特点，然后再在源码中筛选出我们需要的信息，最后借用python的一个与excel相关的库，来实现信息的存储。具体过程如下。</p>
+<h4 id="具体过程">具体过程</h4>
+<p>首先是如何使用python访问网站获得源码？具体实现原理笔者尚不清楚，此处仅给出一个较为通用的模板，使用时只需调用该函数即可获得网页的源代码。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 得到指定一个URL的网页内容</span>
 <span class="token keyword">def</span> <span class="token function">askURL</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
     head <span class="token operator">=</span> <span class="token punctuation">&#123;</span>  <span class="token comment"># 模拟浏览器头部信息，向豆瓣服务器发送消息</span>
@@ -514,17 +523,14 @@
         <span class="token keyword">if</span> <span class="token builtin">hasattr</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> <span class="token string">"reason"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>reason<span class="token punctuation">)</span>
     <span class="token keyword">return</span> html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>在本次爬取学生成绩的过程中，通过一定的观察可以发现，显示学生成绩排名的网站链接(url)是有一定规律的</p>
 <pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;jinshuju.net&#x2F;f&#x2F;SjWGP6&#x2F;s&#x2F;51yrCWq%5B0%5D%5Bfield_1%5D&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>前半部分均为上述字母，在等号后面加上学生的学号即可。那么根据这样的规律再结合我们学院学号的规律，就可以使用电脑来查询近500人的成绩。</p>
 <p>获得源码之后，需要进一步解析才能被接下来的筛选过程所接受，也就是说接下来我们需要解析获得的源代码，借用python的一个库函数beautifulsoup,如何使用这个库，将在后文讲述</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 1.获取网页源码</span>
 html <span class="token operator">=</span> askURL<span class="token punctuation">(</span>url<span class="token punctuation">)</span>  
 <span class="token comment"># 2.逐一解析数据</span>
 soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">,</span> <span class="token string">"html.parser"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>紧接着我们需要进行所需信息的筛选，以爬取成绩排名为例，我们看到网页的一部分源码</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-12 col-sm-6<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gd-table gd-table-bordered word-break-table entry-result-content<span class="token punctuation">"</span></span>  <span class="token attr-name">data-use-logic-hide</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -557,10 +563,10 @@ soup <span class="token operator">=</span> BeautifulSoup<span class="token punct
             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
 # 部分*号为本人所作的保护隐私处理<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>我们想要的学号排名等信息是在<div class="col-md-12 col-sm-6">这个目录之下的，所以我们首先要从源码中把这个目录提取出来，才能进行进一步的筛选。</p>
+我们想要的学号排名等信息是在
+<div class="col-md-12 col-sm-6">
+<p>这个目录之下的，所以我们首先要从源码中把这个目录提取出来，才能进行进一步的筛选。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">item <span class="token operator">=</span> soup<span class="token punctuation">.</span>find_all<span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> class_<span class="token operator">=</span><span class="token string">"col-md-12 col-sm-6"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>接下来比方说我们想要获得这个人的学号信息，那么我们继续看到源码解析后（注意不是源码）有关学号的这一段</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">data-api-code</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>field_1<span class="token punctuation">"</span></span> <span class="token attr-name">data-field</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>field_1<span class="token punctuation">"</span></span> <span class="token attr-name">data-field-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-field<span class="token punctuation">"</span></span> <span class="token attr-name">data-value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20*10*0*10005<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>
@@ -571,23 +577,23 @@ soup <span class="token operator">=</span> BeautifulSoup<span class="token punct
                 20*10*0*10005
             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>我们可以发现，学号这个信息中，最具有标识的是</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">data-api-code</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>field_1<span class="token punctuation">"</span></span> <span class="token attr-name">data-field</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>field_1<span class="token punctuation">"</span></span> <span class="token attr-name">data-field-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-field<span class="token punctuation">"</span></span> <span class="token attr-name">data-value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20*10*0*10005<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>这一行，通过比较其他网页我们发现，这一行的前面部分都是固定的，只有末尾的那一串数字会改变。也就是说，我们只需要找到和前面那一串字母相同的信息，然后取末尾不同的那一串数字即可。我们可以通过下列方法来完成这个操作</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">findnumber <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span><span class="token string">r' data-field="field_1" data-field-type="text-field" data-value="(.*)"'</span><span class="token punctuation">)</span>
 item <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
 number <span class="token operator">=</span> findnumber<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>re.compile的作用是找到与单引号中相同的地方，并获得(.*)所代表的数据</p>
-<p>findnumber &#x3D;re.compile(x) 则是指 用findnumber这串英文字母代替x所代表的匹配规则</p>
+<p>findnumber =re.compile(x) 则是指
+用findnumber这串英文字母代替x所代表的匹配规则</p>
 <p>findnumber.findall(item)[0]则是在item中以findnumber为规则进行匹配</p>
 <p>最重要的一步完成后就是储存数据啦，其他的相对简单，见完整代码的注释部分。</p>
-<p>另外，以上操作涉及到了BeautifulSoup 以及 requests,xlwt的库函数，在程序开头我们需要声明库函数的引用，如果没用安装这个库函数，可以在cmd窗口中输入 pip install 库函数名字,例如：</p>
+<p>另外，以上操作涉及到了BeautifulSoup 以及
+requests,xlwt的库函数，在程序开头我们需要声明库函数的引用，如果没用安装这个库函数，可以在cmd窗口中输入
+pip install 库函数名字,例如：</p>
 <pre class="line-numbers language-none"><code class="language-none">pip install xlwt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 库函数声明</span>
+<h3 id="完整代码">完整代码</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 库函数声明</span>
 <span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup  <span class="token comment"># 网页解析，获取数据的库</span>
 <span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">,</span> urllib<span class="token punctuation">.</span>error
 <span class="token keyword">from</span> bs4<span class="token punctuation">.</span>element <span class="token keyword">import</span> ResultSet  <span class="token comment"># 制定URL，获取网页数据的库</span>
@@ -703,9 +709,6 @@ findeng <span class="token operator">=</span> re<span class="token punctuation">
      main<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment"># init_db("movietest.db")</span>
      <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"爬取完毕！"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 
                 
             </div>

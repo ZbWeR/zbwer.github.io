@@ -6,10 +6,14 @@
     <meta charset="utf-8">
     <meta name="keywords" content="C++从零入门, ZbWeR">
     <meta name="description" content="0.大体介绍
+
 为什么要写程序：
 
-​    通过程序可以指挥电脑帮助人们解决计算量比较庞大并且具有普适性的问题，比方说从数以万计的路线中分析出最短路线，比方说进行成百上千次的加减乘除。又比方说下面这个题目：
-![capture_202111">
+​
+通过程序可以指挥电脑帮助人们解决计算量比较庞大并且具有普适性的问题，比方说从数以万计的路线中分析出最短路线，比方说进行成百上千次的加减乘除。又比方说下面这个题目：
+
+
+capture_">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -497,16 +501,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="0-大体介绍"><a href="#0-大体介绍" class="headerlink" title="0.大体介绍"></a>0.大体介绍</h2><ul>
+                <h2 id="大体介绍">0.大体介绍</h2>
+<ul>
 <li>为什么要写程序：</li>
 </ul>
-<p>​    通过程序可以指挥电脑帮助人们解决计算量比较庞大并且具有普适性的问题，比方说从数以万计的路线中分析出最短路线，比方说进行成百上千次的加减乘除。又比方说下面这个题目：</p>
-<p>![capture_20211117174125774](D:\Huawei Share\Screenshot\capture_20211117174125774.bmp)</p>
+<p>​
+通过程序可以指挥电脑帮助人们解决计算量比较庞大并且具有普适性的问题，比方说从数以万计的路线中分析出最短路线，比方说进行成百上千次的加减乘除。又比方说下面这个题目：</p>
+<figure>
+<img src="D:\Huawei%20Share\Screenshot\capture_20211117174125774.bmp"
+alt="capture_20211117174125774" />
+<figcaption aria-hidden="true">capture_20211117174125774</figcaption>
+</figure>
 <ul>
 <li>程序由什么组成：</li>
 </ul>
-<p>​    程序用于解决计算问题，所以程序的组成其实取决于问题的组成。我们先看上面这个问题由什么构成，上题题面中给出了$D1,C,D2$等数据，让我们计算费用，而费用的公式我们是知道的（怎么算油钱就不赘述了）。所以一个问题是由已知数据，计算目标，计算公式组成的。那么对于一个程序，首先要能把这些已知的数据输入到电脑中，再经过一系列的计算，最后把我们想要的答案输出来。</p>
-<p>​    总而言之，&#x3D;&#x3D;一个基本的程序包括：<strong>输入数据</strong>，<strong>进行运算</strong>，<strong>输出答案</strong>。&#x3D;&#x3D;</p>
+<p>​
+程序用于解决计算问题，所以程序的组成其实取决于问题的组成。我们先看上面这个问题由什么构成，上题题面中给出了<span
+class="math inline">\(D1,C,D2\)</span>等数据，让我们计算费用，而费用的公式我们是知道的（怎么算油钱就不赘述了）。所以一个问题是由已知数据，计算目标，计算公式组成的。那么对于一个程序，首先要能把这些已知的数据输入到电脑中，再经过一系列的计算，最后把我们想要的答案输出来。</p>
+<p>​
+总而言之，==一个基本的程序包括：<strong>输入数据</strong>，<strong>进行运算</strong>，<strong>输出答案</strong>。==</p>
 <p>在介绍这三个东西之前，还有一点前置知识需要了解，我们看到一个简单的程序。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
@@ -533,16 +546,17 @@
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span>ans<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>（$PS:$观察上面程序可以发现基本上每一行结束都由一个”;”分号，分号在程序中的作用相当于语文中的句号）</p>
+<p>（<span
+class="math inline">\(PS:\)</span>观察上面程序可以发现基本上每一行结束都由一个";"分号，分号在程序中的作用相当于语文中的句号）</p>
 <p>我们来分块解读一下整个程序，对于前两行代码</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>这是一个程序的必不可少并且千篇一律的部分，<strong>基本上</strong>每个程序都要打这两行代码。</p>
 <p>形象地解释就是，通过这两行代码告诉计算机，我要开始编程序了，你注意一下！</p>
-<p>比较专业的解释呢，就是&lt;bits&#x2F;stdc++.h&gt;表示的是头文件(其中&lt;&gt;中的内容指的是头文件的名字)，可以理解为一本字典，对于其他英文可以直接用中文的翻译来理解，专业的解释就是：提起声明本程序要使用<balabala>这个头文件，并且使用命名空间。翻译成人话就是：（对电脑说）我接下来要开始使用<balabala>这本字典里的专业词汇了，待会儿别和我说听不懂。</p>
-<p>&#x3D;&#x3D;注意：&lt;bits&#x2F;stdc++.h&gt;是$c++$的库文件，请勿在$C$语言中使用&#x3D;&#x3D;</p>
+<p>比较专业的解释呢，就是&lt;bits/stdc++.h&gt;表示的是头文件(其中&lt;&gt;中的内容指的是头文件的名字)，可以理解为一本字典，对于其他英文可以直接用中文的翻译来理解，专业的解释就是：提起声明本程序要使用<balabala>这个头文件，并且使用命名空间。翻译成人话就是：（对电脑说）我接下来要开始使用<balabala>这本字典里的专业词汇了，待会儿别和我说听不懂。</p>
+<p>==注意：&lt;bits/stdc++.h&gt;是<span
+class="math inline">\(c++\)</span>的库文件，请勿在<span
+class="math inline">\(C\)</span>语言中使用==</p>
 <p>先跳过一行，直接来看下面这个框架</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
@@ -550,8 +564,9 @@
     
 	retuern <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这个框架叫做“主函数”，是一个程序的主体部分，我们进行输入数据，运算以及输出都是在这个函数中进行。至于$int$,$return 0$这些是什么意思，在稍后会向大家解释。</p>
+<p>这个框架叫做“主函数”，是一个程序的主体部分，我们进行输入数据，运算以及输出都是在这个函数中进行。至于<span
+class="math inline">\(int\)</span>,<span class="math inline">\(return
+0\)</span>这些是什么意思，在稍后会向大家解释。</p>
 <p>总结一下，下面给出的这几行代码，是需要<strong>背下来</strong>的，初学的时候，你可以不用知道它们具体代表什么，但你一定要会打出来。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
@@ -561,17 +576,25 @@
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>课后作业：自己打这几行代码十遍，做到能默写的程度。</p>
-<hr>
-<h2 id="输入输出数据"><a href="#输入输出数据" class="headerlink" title="输入输出数据"></a>输入输出数据</h2><ul>
+<hr />
+<h2 id="输入输出数据">输入输出数据</h2>
+<ul>
 <li>什么是数据？或者说数据有哪些类型？</li>
 </ul>
-<p>​    显然数字就是一种数据，再细分一些，数字包括整数，小数等等。其次字符也是一种数据，包括我们熟悉的”abc”这些英文字母，也包括感叹号问号这些特殊字符。</p>
+<p>​
+显然数字就是一种数据，再细分一些，数字包括整数，小数等等。其次字符也是一种数据，包括我们熟悉的"abc"这些英文字母，也包括感叹号问号这些特殊字符。</p>
 <ul>
 <li>数据输入到哪儿？输入给谁？</li>
 </ul>
-<p>​    首先，我们要有不同的容器来存放这些数据，就好比现在你知道2件衣服108元，你输入了2 和 108，计算机怎么知道2代表什么意思，108代表什么意思。就像应用题解方程一样，我们在开头总要说清楚，比如设花费的油钱为$x$元，那么此时$x$就相当于一个容器。所以在输入数据之前，我们首先要声明一些变量。比如说我们声明两个变量，一个叫做$money$，用来储存衣服的价格，一个叫做$cloth$用来储存衣服的件数。</p>
+<p>​
+首先，我们要有不同的容器来存放这些数据，就好比现在你知道2件衣服108元，你输入了2
+和
+108，计算机怎么知道2代表什么意思，108代表什么意思。就像应用题解方程一样，我们在开头总要说清楚，比如设花费的油钱为<span
+class="math inline">\(x\)</span>元，那么此时<span
+class="math inline">\(x\)</span>就相当于一个容器。所以在输入数据之前，我们首先要声明一些变量。比如说我们声明两个变量，一个叫做<span
+class="math inline">\(money\)</span>，用来储存衣服的价格，一个叫做<span
+class="math inline">\(cloth\)</span>用来储存衣服的件数。</p>
 <ul>
 <li>那么如何声明变量呢？</li>
 </ul>
@@ -580,7 +603,6 @@
     <span class="token keyword">int</span> a<span class="token punctuation">;</span>
 <span class="token comment">//作用是声明一个叫做a的变量</span>
 <span class="token comment">//两个斜杠表示注释，就是做笔记的意思，在程序中不会运行</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>数据类型是什么呢？</li>
 </ul>
@@ -591,7 +613,6 @@
 浮点型（小数的意思） <span class="token keyword">double</span>
 字符型 <span class="token keyword">char</span>
 请牢记这个方块里的内容！！！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>变量的命名规则</li>
 </ul>
@@ -599,13 +620,14 @@
    	<span class="token keyword">int</span> num_1<span class="token punctuation">;</span><span class="token comment">//声明一个叫做num_1的整数</span>
 	<span class="token keyword">double</span> Abc<span class="token punctuation">;</span><span class="token comment">//声明一个叫做Abc的小数</span>
 	<span class="token keyword">char</span> tmp1<span class="token punctuation">;</span><span class="token comment">//声明一个叫做tmp1的字符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>如何输入数据(顺便把输出数据讲了)</li>
 </ul>
 <p>提前声明：对于下文提到的所有程序，都建议自己打一遍。</p>
 <p>这里给出两种方法，各有优劣。例如：</p>
-<p>&#x3D;&#x3D;注意：此方法仅适用于$C++$，请勿在$C$语言中使用&#x3D;&#x3D;</p>
+<p>==注意：此方法仅适用于<span
+class="math inline">\(C++\)</span>，请勿在<span
+class="math inline">\(C\)</span>语言中使用==</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//1.</span>
 <span class="token comment">//优点是对于各种数据类型都适用，不用变化</span>
 <span class="token comment">//缺点是运行速度比较慢(不懂没关系)</span>
@@ -627,7 +649,6 @@
     <span class="token comment">//分号别漏！！！！</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>下一种方法可能有点复杂，不理解以后再学也没关系</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//2.</span>
 <span class="token comment">//优点是运行速度快并且比较美观</span>
@@ -659,8 +680,8 @@
     <span class="token comment">//不输出变量，只输出你想输出的东西</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>文中提到的$scanf$和$printf$叫做格式化输入输出，下面是对于<strong>格式化</strong>的解释</p>
+<p>文中提到的<span class="math inline">\(scanf\)</span>和<span
+class="math inline">\(printf\)</span>叫做格式化输入输出，下面是对于<strong>格式化</strong>的解释</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -678,12 +699,16 @@
     <span class="token comment">//printf规定了你输出的格式</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><ul>
+<hr />
+<h2 id="运算">运算</h2>
+<ul>
 <li>怎样进行运算？</li>
 </ul>
-<p>对于一个式子$1+1$，我们知道它的结果为$2$,是因为我们知道$+$这个符号代表加法。同样，让计算机进行各种运算的时候，我们也需要类似于$+-*&#x2F;$这样的运算符，让它知道要进行哪种运算。</p>
+<p>对于一个式子<span
+class="math inline">\(1+1\)</span>，我们知道它的结果为<span
+class="math inline">\(2\)</span>,是因为我们知道<span
+class="math inline">\(+\)</span>这个符号代表加法。同样，让计算机进行各种运算的时候，我们也需要类似于<span
+class="math inline">\(+-*/\)</span>这样的运算符，让它知道要进行哪种运算。</p>
 <ul>
 <li>有哪些运算符？</li>
 </ul>
@@ -709,7 +734,6 @@ a%b=c 其中 c 是a除以b后所得的余数
     <span class="token comment">//输出a+b,a-b,a%b的值，自己试一下！</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 赋值运算符： = （即等号）
 对于式子 a=5; 表示的含义是，将5这个值交给a,即a这个变量中存储的数据是5
@@ -723,7 +747,6 @@ a%b=c 其中 c 是a除以b后所得的余数
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d %d"</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 关系运算符： >（大于） &lt;(小于) >=(大等于) &lt;=(小等于) ==(等于) !=(不等于)
 记住！等于是==,一个等号是赋值运算！
@@ -739,13 +762,14 @@ a%b=c 其中 c 是a除以b后所得的余数
     <span class="token comment">//自己把>改成其他符号试一下</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>逻辑运算符将在下一部分讲解。</p>
-<hr>
-<h2 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h2><p>来看这样一个题目，</p>
+<hr />
+<h2 id="分支结构">分支结构</h2>
+<p>来看这样一个题目，</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">给定一个数n<span class="token punctuation">,</span>判断n是偶数还是奇数，偶数输出<span class="token string">"Yes"</span><span class="token punctuation">,</span>奇数输出<span class="token string">"No"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>我们发现，根据目前掌握的知识并不能解决。我们先用人话来描述一下解题思路，偶数的标准是能被2整除，意思就是这个数对2进行取模运算的结果是0.根据这一点，如果$n$%$2&#x3D;0$那么我们就输出Yes,反之输出”No”就行了。</p>
+<p>我们发现，根据目前掌握的知识并不能解决。我们先用人话来描述一下解题思路，偶数的标准是能被2整除，意思就是这个数对2进行取模运算的结果是0.根据这一点，如果<span
+class="math inline">\(n\)</span>%<span
+class="math inline">\(2=0\)</span>那么我们就输出Yes,反之输出"No"就行了。</p>
 <p>问题在于，这个中文”如果“在计算机中用什么来表示？</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 介绍一个条件判断的语句结构
@@ -775,7 +799,6 @@ if(表达式1)
 
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 再介绍另一种结构，双分支结构
 
@@ -806,10 +829,8 @@ else
 
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>我们再看到一个题目:</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">给定一个数n<span class="token punctuation">,</span>如果n大于<span class="token number">0</span><span class="token punctuation">,</span>则输出<span class="token number">1</span><span class="token punctuation">;</span>如果n等于<span class="token number">0</span>，则输出<span class="token number">0</span><span class="token punctuation">;</span>如果n小于<span class="token number">0</span><span class="token punctuation">,</span>则输出<span class="token operator">-</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>根据我们上面学的知识，不难得出这样一份代码</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 如果if下的大括号内只有一个表达式,我们可以省略大括号不写
@@ -831,15 +852,19 @@ if(a>b) printf("1");
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>值得注意的是，我们不能写成这样</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
 
 <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">else</span>  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"-1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>因为$else$是和$if$配套使用的，此处的$else$表示的是：若$n$等于$0$不成立就输出$-1$.</p>
-<p>即$else$的否定是只针对上一个$if$而言的</p>
+<p>因为<span class="math inline">\(else\)</span>是和<span
+class="math inline">\(if\)</span>配套使用的，此处的<span
+class="math inline">\(else\)</span>表示的是：若<span
+class="math inline">\(n\)</span>等于<span
+class="math inline">\(0\)</span>不成立就输出<span
+class="math inline">\(-1\)</span>.</p>
+<p>即<span class="math inline">\(else\)</span>的否定是只针对上一个<span
+class="math inline">\(if\)</span>而言的</p>
 <p>接下来再介绍一个新的结构</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 if(表达式1)
@@ -873,10 +898,8 @@ else
     <span class="token keyword">else</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"-1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>接下来我们通过一个例题来介绍上文提到的<strong>逻辑运算符</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">给定两个整数a<span class="token punctuation">,</span>b<span class="token punctuation">.</span>如果a能被<span class="token number">2</span>整除且a大于b<span class="token punctuation">,</span>则输出Yes<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>这里涉及到了<strong>并且</strong>这个操作，让我们看看如何实现</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 逻辑运算符的分类：
@@ -897,12 +920,13 @@ else
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>练手题链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/101#problems">【入门2】分支结构 - 题单 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></p>
-<hr>
-<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><p>我们知道计算机程序的特点之一就是进行重复的运算，那么如何实现呢？我们先来看一个题目</p>
+<p>练手题链接：<a
+target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/101#problems">【入门2】分支结构
+- 题单 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></p>
+<hr />
+<h2 id="循环结构">循环结构</h2>
+<p>我们知道计算机程序的特点之一就是进行重复的运算，那么如何实现呢？我们先来看一个题目</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">给定一个整数n<span class="token punctuation">,</span>求<span class="token number">1</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">9</span><span class="token operator">+</span><span class="token number">16</span><span class="token operator">+</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">+</span>n²的值<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>对于这种要进行多次运算的题目，我们就需要用到<strong>循环结构</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 基本结构
@@ -943,12 +967,12 @@ for(初始化;条件判断;增量表达式)
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>i<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//即i=1-100中的所有奇数</span>
 	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>i<span class="token operator">=</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//即i=1-100中2的次幂</span>
 <span class="token comment">//需要注意的是，在for()的小括号里定义的变量，在结束for循环后就不再生效.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>此题中$sum$这个变量的作用请好好体会</p>
+<p>此题中<span
+class="math inline">\(sum\)</span>这个变量的作用请好好体会</p>
 <p>下面我们再看一道题,</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">题目描述：所谓谓角谷猜想，是指对于任意一个正整数，如果是奇数，则乘<span class="token number">3</span>加<span class="token number">1</span>，如果是偶数，则除以<span class="token number">2</span>，得到的结果再按照上述规则重复处理，最终总能够得到<span class="token number">1</span>。如，假定初始整数为<span class="token number">5</span>，计算过程分别为<span class="token number">16</span>、<span class="token number">8</span>、<span class="token number">4</span>、<span class="token number">2</span>、<span class="token number">1</span>。程序要求输入一个整数，将经过处理得到<span class="token number">1</span>的过程输出来。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>这道题与上一道题的不同之处就在于，上一道题我们知道要计算$n$次就能得出答案，而这一道题我们不知道要算多少次.</p>
+<p>这道题与上一道题的不同之处就在于，上一道题我们知道要计算<span
+class="math inline">\(n\)</span>次就能得出答案，而这一道题我们不知道要算多少次.</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 引入一个新的循环结构：
 while(表达式1)
@@ -972,8 +996,10 @@ while(表达式1)
     <span class="token punctuation">&#125;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>总结：若已知运算次数，则适合使用$for$循环，若未知运算次数，则考虑使用$while$循环,还有一种$dowhile$循环请读者自行了解.下面给出一些常见的循环用法</p>
+<p>总结：若已知运算次数，则适合使用<span
+class="math inline">\(for\)</span>循环，若未知运算次数，则考虑使用<span
+class="math inline">\(while\)</span>循环,还有一种<span
+class="math inline">\(dowhile\)</span>循环请读者自行了解.下面给出一些常见的循环用法</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//读入n次数据</span>
 <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
     	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -984,18 +1010,22 @@ while(表达式1)
     <span class="token comment">//continue的作用是跳过接下来的表达式,直接进入i++环节</span>
     <span class="token keyword">else</span> 表达式<span class="token number">1</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>练手题链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1980">NOIP2013 普及组] 计数问题 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></p>
-<hr>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>注：此部分内容笔者其实掌握程度并不深，有兴趣的可以点链接学习<a target="_blank" rel="noopener" href="http://c.biancheng.net/c/function/">C语言函数完全攻略 (biancheng.net)</a></p>
+<p>练手题链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1980">NOIP2013
+普及组] 计数问题 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></p>
+<hr />
+<h2 id="函数">函数</h2>
+<p>注：此部分内容笔者其实掌握程度并不深，有兴趣的可以点链接学习<a
+target="_blank" rel="noopener" href="http://c.biancheng.net/c/function/">C语言函数完全攻略
+(biancheng.net)</a></p>
 <ul>
 <li><p>什么是函数？</p>
-<p>函数就是具有独特功能的工具，比方说$S(r)&#x3D;\pi r^2 $这个函数，它的功能就是知道半径可以求出边长,比方说$max(a,b)$这个函数，就可以求出两个数中最大的那个数.</p>
-</li>
+<p>函数就是具有独特功能的工具，比方说$S(r)=r^2 <span
+class="math inline">\(这个函数，它的功能就是知道半径可以求出边长,比方说\)</span>max(a,b)$这个函数，就可以求出两个数中最大的那个数.</p></li>
 <li><p>怎样编写函数？函数由哪些部分组成？</p>
-<p>考察$S(r)&#x3D;\pi r^2 $，我们发现函数包括函数的名字($S$),函数包含的参数($r$),以及函数的运算过程($\pi r^2$)</p>
+<p>考察$S(r)=r^2 <span
+class="math inline">\(，我们发现函数包括函数的名字(\)</span>S<span
+class="math inline">\(),函数包含的参数(\)</span>r<span
+class="math inline">\(),以及函数的运算过程(\)</span>r^2$)</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">在使用一个函数之前，我们需要定义函数，一般格式为：
 返回类型 函数名称<span class="token punctuation">(</span>类型参数<span class="token number">1</span>，类型参数<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
@@ -1036,7 +1066,6 @@ while(表达式1)
 我们可以解释一下 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>的含义的
 即表示主函数的返回类型为<span class="token keyword">int</span><span class="token punctuation">,</span>所以我们在<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>的最后一行才要协商 <span class="token keyword">return</span> <span class="token number">0</span> 
 至于为什么返回<span class="token number">0</span><span class="token punctuation">,</span>请读者自行了解<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>如何使用函数?</li>
 </ul>
@@ -1060,10 +1089,7 @@ while(表达式1)
 	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<hr>
+<hr />
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/*
 写到这里其实已经差不多入门了，
 我没讲的地方还有字符串类型，数组，还有结构体
@@ -1074,7 +1100,6 @@ while(表达式1)
 
 完结，撒花！
 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 
                 
             </div>
