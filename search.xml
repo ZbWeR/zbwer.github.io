@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>github+hexo搭建个人博客</title>
+      <link href="/2022/06/30/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/06/30/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="githubhexo搭建个人博客">github+hexo搭建个人博客</h1><h2 id="引言">引言</h2><ul><li>为什么要搭建博客？</li></ul><p>常规的主流博客网站CSDN、博客园、简书等等或多或少都有一定的缺点，广告繁杂、界面单调乏味、文章实时排版困难等等。而自己搭建的博客更加美观简洁，无广告且容易修改。</p><ul><li>关于hexo</li></ul><p>hexo是目前主流的博客框架之一。什么是博客框架呢？把写博客比作写日记，那么博客框架就是我们的日记本，日记本自然就有不同的样式不同的品牌，hexo就是比较知名的品牌。hexo快速简洁高效，上手简单，并且支持markdown渲染。所以在此我们选择hexo作为本次搭建博客的框架。</p><ul><li>关于github</li></ul><p>博客的作用在于记录与分享，hexo搭建的框架就像日记本一样能给我提供记录的地方，而github可以把这本日记发布到网络上分享出去，让其他的人也能看到我们的记录。</p><p>本文将包括以下内容：</p><blockquote><p>1.GitHub账号注册。2.hexo环境配置与安装。3.部署到github。4.博客主题的更换</p></blockquote><h2 id="github账号注册">1.Github账号注册</h2><p>首先打开GitHub的官网：<a href="https://github.com/">GitHub: Where theworld builds software · GitHub</a> <imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客1.png"alt="博客1" /></p><p>在网页空格中输入自己的邮箱地址，随后按照网页指示操作即可。</p><h2 id="hexo环境配置与安装">2.hexo环境配置与安装</h2><p>1.安装Node.js:<a href="https://nodejs.org/en/">Node.js(nodejs.org)</a></p><figure><imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客2.png"alt="博客2" /><figcaption aria-hidden="true">博客2</figcaption></figure><p>hexo这个博客框架是基于Node.js运行的，在安装hexo之前，我们首先要安装Node.js。</p><p>如图点击==左侧LTS==按钮即可开始下载。</p><ol start="2" type="1"><li>安装git:<a href="https://git-scm.com/download/win">Git - DownloadingPackage (git-scm.com)</a></li></ol><p>在界面中选择32位或64位后下载安装即可。</p><p>3.检查是否成功安装，按win+R快捷键输入cmd,打开命令行面板，输入<code>node -v</code>然后回车;在输入<code>git --version</code>回车，若出现版本号，如下图实例，则说明安装成功。</p><figure><imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客3.png"alt="博客3" /><figcaption aria-hidden="true">博客3</figcaption></figure><p>4.打开cmd面板，输入<code>npm install -g hexo-cli</code>即可自动安装hexo,耐心等待安装完毕，随后输入<code>hexo -v</code>检查是否成功安装，运行结果如下图。</p><figure><imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客4.png"alt="博客4" /><figcaption aria-hidden="true">博客4</figcaption></figure><p>5.新建一个文件夹（名称任意，下文以haha为例）,打开文件夹，在地址栏输入cmd进入命令行界面，然后输入<code>hexo init</code>进行博客初始化,该步骤需要一定的时间。</p><p><imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客5.png"alt="博客5" /> <imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客6.png"alt="博客6" /> 初始化完成后，原本空白的文件夹中，将出现以下文件。 <imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客7.png"alt="博客7" /></p><ul><li>_config.yml : 网站的主要配置信息</li><li>package.json : 应用程序的信息</li><li>scaffolds : 模板文件夹，新建文章时，Hexo会自动根据模板添加内容</li><li>source : 资源文件夹，存放发布的文章</li><li>themes : 主题文件夹.</li></ul><p>6.随后我们继续在cmd命令行界面中，输入<code>hexo s</code>，复制跳出来的网址打开，即可看到一个初始的博客页面。</p><figure><imgsrc="D:_MyBlog\website-hexo\source\articalpng\github+hexo搭建个人博客\博客8.png"alt="博客8" /><figcaption aria-hidden="true">博客8</figcaption></figure><p>博客页面中是hexo命令的简单介绍.包括如何新建文章<code>hexo new "name"</code>，如何预览网页<code>hexo s</code>，如何生成静态文件<code>hexo g</code>，以及如何部署到网络上<code>hexo d</code>.当然，我们也可以在命令行界面输入<code>hexo help</code>来查看所有指令.</p><h2 id="部署到github">部署到github</h2><p>暂时不想写,请参考：<ahref="https://zhuanlan.zhihu.com/p/137476045">Hexo搭建个人博客-并部署到Github上托管(Windows)- 知乎 (zhihu.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++从零入门</title>
       <link href="/2021/11/19/0.%E5%A4%A7%E4%BD%93%E4%BB%8B%E7%BB%8D/"/>
       <url>/2021/11/19/0.%E5%A4%A7%E4%BD%93%E4%BB%8B%E7%BB%8D/</url>
